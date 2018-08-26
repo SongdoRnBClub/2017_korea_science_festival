@@ -22,7 +22,7 @@
 	{
 	  byte translator=0;                  //확률 변환
 
-		long constant1=5267, constant2=3904 ,divide=2^12; //divide=4096
+		int constant1=5267, constant2=3904 ,divide=2048; //divide=4096
 		random_num[1]=(constant1*random_num[0]+constant2)%divide;    //확률(LCG)선형합동법
 
 		if(0<=random_num<=1365)
